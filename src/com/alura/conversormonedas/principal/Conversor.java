@@ -17,7 +17,6 @@ import java.net.http.HttpResponse;
 
 public class Conversor {
 
-    // Método que muestra el menú de opciones
     public static void exibirMenu() {
         System.out.println("""
             
@@ -69,31 +68,23 @@ public class Conversor {
         return null;
     }
 
-
-
-    // Método para realizar la conversión de moneda
     public static void realizarConversion(Scanner scanner, Map<String, Double> conversionRates, String monedaOrigen, String monedaDestino) {
-        // Verificar si las monedas son válidas
+
         if (!conversionRates.containsKey(monedaOrigen) || !conversionRates.containsKey(monedaDestino)) {
             System.out.println("Una o ambas monedas ingresadas no son válidas.");
             return;
         }
 
-        // Solicitar el monto a convertir
         System.out.print("Ingrese el monto a convertir (" + monedaOrigen + " a " + monedaDestino + "): ");
         double monto = scanner.nextDouble();
 
-        // Obtener las tasas de conversión
         double tasaOrigen = conversionRates.get(monedaOrigen);
         double tasaDestino = conversionRates.get(monedaDestino);
 
-        // Calcular el monto convertido
         double montoConvertido = (monto / tasaOrigen) * tasaDestino;
 
-        // Redondear el resultado a 2 decimales
         String resultadoFormateado = String.format("%.2f", montoConvertido);
 
-        // Mostrar el resultado
         System.out.println("El monto " + monto + " [" + monedaOrigen + "] corresponde al valor final de =>> " + resultadoFormateado + " [" + monedaDestino +"]");
     }
 }
