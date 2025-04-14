@@ -70,5 +70,5 @@ Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archiv
 - **ExchangeRate-API**: Para obtener las tasas de conversión de monedas.
 
 <p align="center">
-  <img src="https://firebasestorage.googleapis.com/v0/b/confecciones-5368b.appspot.com/o/Captura%20de%20pantalla%202025-04-13%20215533.jpg?alt=media&token=23aed311-540a-4e5b-b88b-0fa273ee66a8" height="200"/>
+  <img src="https://firebasestorage.googleapis.com/v0/b/confecciones-5368b.appspot.com/o/Captura%20de%20pantalla%202025-04-13%20215533.jpg?alt=media&token=23aed311-540a-4e5b-b88b-0fa273ee66a8"/>
 </p>
